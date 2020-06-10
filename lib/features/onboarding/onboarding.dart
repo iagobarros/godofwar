@@ -17,7 +17,7 @@ class OnboardingPage extends StatelessWidget {
               shouldPresentButton: true,
               buttonTitle: "Spartan Rage !!!",
               onButtonPressed: (context) {
-                _presentPokemonListPage(context: context);
+                _presentPokemonListPage(context: context, guid: "3030-6959");
               })),
       OnboardingPageChild(
           model: OnboardingPageChildModel(
@@ -27,7 +27,7 @@ class OnboardingPage extends StatelessWidget {
               shouldPresentButton: true,
               buttonTitle: "Spartan Rage !!!",
               onButtonPressed: (context) {
-                _presentPokemonListPage(context: context);
+                _presentPokemonListPage(context: context, guid: "3030-11314");
               })),
       OnboardingPageChild(
           model: OnboardingPageChildModel(
@@ -37,7 +37,7 @@ class OnboardingPage extends StatelessWidget {
               shouldPresentButton: true,
               buttonTitle: "Spartan Rage !!!",
               onButtonPressed: (context) {
-                _presentPokemonListPage(context: context);
+                _presentPokemonListPage(context: context, guid: "3030-20461");
               })),
       OnboardingPageChild(
           model: OnboardingPageChildModel(
@@ -47,7 +47,7 @@ class OnboardingPage extends StatelessWidget {
               shouldPresentButton: true,
               buttonTitle: "Spartan Rage !!!",
               onButtonPressed: (context) {
-                _presentPokemonListPage(context: context);
+                _presentPokemonListPage(context: context, guid: "3030-20592");
               })),
       OnboardingPageChild(
           model: OnboardingPageChildModel(
@@ -57,7 +57,7 @@ class OnboardingPage extends StatelessWidget {
               shouldPresentButton: true,
               buttonTitle: "Spartan Rage !!!",
               onButtonPressed: (context) {
-                _presentPokemonListPage(context: context);
+                _presentPokemonListPage(context: context, guid: "3030-31180");
               })),
       OnboardingPageChild(
           model: OnboardingPageChildModel(
@@ -67,7 +67,7 @@ class OnboardingPage extends StatelessWidget {
               shouldPresentButton: true,
               buttonTitle: "Spartan Rage !!!",
               onButtonPressed: (context) {
-                _presentPokemonListPage(context: context);
+                _presentPokemonListPage(context: context, guid: "3030-38043");
               })),
       OnboardingPageChild(
           model: OnboardingPageChildModel(
@@ -77,12 +77,12 @@ class OnboardingPage extends StatelessWidget {
               shouldPresentButton: true,
               buttonTitle: "Spartan Rage !!!",
               onButtonPressed: (context) {
-                _presentPokemonListPage(context: context);
+                _presentPokemonListPage(context: context, guid: "3030-54229");
               })),
     ];
   }
 
-  _presentPokemonListPage({BuildContext context}) {
+  _presentPokemonListPage({BuildContext context, String guid}) {
     Navigator.of(context).pushReplacement(
         CupertinoPageRoute(builder: (context) => LandingTabPage()));
   }

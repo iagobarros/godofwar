@@ -18,15 +18,14 @@ https://www.giantbomb.com/api/game/3030-54229/?api_key=37447139576d1eefe0803c9bc
 */
 
 class BaseService {
-  String publicKEY = '5ea3980f323cb76c1187caca74afd66f';
-  String privateKEY = 'e4602bd9a88ad1a9b997be30d76a3a61d2af4a3a';
-  String param =
-      "?ts=1&apikey=5ea3980f323cb76c1187caca74afd66f&hash=efacbc2a5a95762df94f3fdf32518629";
+  //String publicKEY = '5ea3980f323cb76c1187caca74afd66f';
+  //String privateKEY = 'e4602bd9a88ad1a9b997be30d76a3a61d2af4a3a';
 
+  String key = "?api_key=37447139576d1eefe0803c9bc7378a430f6cac37";
   String baseURLAPI = "http://https://www.giantbomb.com/api/";
 
   String formAPI(String endpoint) {
-    return "$baseURLAPI$endpoint$param";
+    return "$baseURLAPI$endpoint$key";
   }
 }
 
